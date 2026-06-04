@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'docker'
-        repository: 'is28minutes/currency-exchange'
+        repository: 'anant/currency-exchange'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
