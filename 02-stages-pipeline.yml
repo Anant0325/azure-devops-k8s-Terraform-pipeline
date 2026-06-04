@@ -33,9 +33,9 @@ stages:
     - bash: ls -R $(Build.ArtifactStagingDirectory)
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
-        publishLocation: 'Container'
+       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+       ArtifactName: 'drop'
+       publishLocation: 'Container'
   # - job: SecondJob
   #   steps:
   #   - bash: echo Build SecondJob
